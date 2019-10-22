@@ -39,6 +39,32 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
   });
-
-  return getPosts;
+  
+  const getAuthors = makeRequest(graphql, `
+      {
+        allStrapiUser {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+      `).then(result => {
+      // Create pages for each user.
+      result.data.allStrapiUser.edges.forEach(({ node }) => {
+        createPage({
+          path: `/authors/${node.id}`,
+          component: path.resolve(`src/templates/author.js`),
+          context: {
+            id: node.id,
+          },
+        })
+      })
+    });
+  // Queries for posts & authors nodes for creating pages
+  return Promise.all([
+    getPosts,
+    getAuthors,
+  ])
 };

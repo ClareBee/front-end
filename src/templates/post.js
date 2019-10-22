@@ -11,7 +11,7 @@ const PostTemplate = ({ data }) => (
       {data.strapiPost.author.username}
       </Link>
     </p>
-    <Img fixed={data.strapiPost.banner.childImageSharp.fixed} />
+    <Img fluid={data.strapiPost.banner.childImageSharp.fluid} />
     <p>{data.strapiPost.content}</p>
   </Layout>
 )
@@ -25,8 +25,8 @@ export const query = graphql`
       content
       banner {
           childImageSharp {
-            fixed(width: 200, height: 125) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
