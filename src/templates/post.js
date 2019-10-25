@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import ReactMarkdown from 'react-markdown'
 import Layout from '../components/layout'
 
 const PostTemplate = ({ data }) => (
@@ -12,7 +13,10 @@ const PostTemplate = ({ data }) => (
       </Link>
     </p>
     <Img fluid={data.strapiPost.banner.childImageSharp.fluid} />
-    <p>{data.strapiPost.content}</p>
+    <ReactMarkdown
+      source={data.strapiPost.content}
+      transformImageURI={uri => uri.startsWith('http') ? uri :
+      `${process.env.IMAGE_BASE_URL}${uri}`} />
   </Layout>
 )
 
@@ -24,12 +28,12 @@ export const query = graphql`
       title
       content
       banner {
-          childImageSharp {
-            fluid(maxWidth: 600) {
-              ...GatsbyImageSharpFluid
-            }
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
           }
         }
+      }
       author {
         id
         username
