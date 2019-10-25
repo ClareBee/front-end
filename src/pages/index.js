@@ -21,7 +21,8 @@ const IndexPage = ({ data }) => (
           source={post.node.content.substring(0,500).concat("...")}
           transformImageURI={uri => uri.startsWith('http') ? uri :
           `${process.env.IMAGE_BASE_URL}${uri}`}
-          className='indexArticle' />
+          className='indexArticle'
+          escapeHtml={false} />
         <Link to={`/${post.node.id}`}>Read more</Link>
       </li>
     ))}

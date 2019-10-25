@@ -17,9 +17,9 @@ const UserTemplate = ({ data }) => (
               source={post.content.substring(0,500).concat('...')}
               transformImageURI={uri => uri.startsWith('http') ? uri :
               `${process.env.IMAGE_BASE_URL}${uri}`}
-              className='indexArticle' />
-              <Link to={`/Post_${post.id}`}>Read more</Link>
-
+              className='indexArticle'
+              escapeHtml={false} />
+            <Link to={`/Post_${post.id}`}>Read more</Link>
           </li>
         ))}
       </ul>
