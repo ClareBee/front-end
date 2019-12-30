@@ -1,5 +1,13 @@
 @tailwind base;
 
+html {
+  @apply font-body;
+}
+
+h1 {
+  @apply font-display text-2xl tracking-wide uppercase leading-relaxed;
+}
+
 @tailwind components;
 
 @tailwind utilities;

@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 const PostTemplate = ({ data }) => (
   <Layout>
     <h1>{data.strapiPost.title}</h1>
-    <p>by
+    <p className="font-body">by
       <Link to={`/authors/User_${data.strapiPost.author.id}`}>
       {data.strapiPost.author.username}
       </Link>

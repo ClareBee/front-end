@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container flex-grow flex flex-col">
         <main className="flex-grow">{children}</main>
-        <footer className="">
+        <footer className="font-body">
           © {new Date().getFullYear()} - Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>,
