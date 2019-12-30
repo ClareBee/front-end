@@ -1,11 +1,18 @@
 @tailwind base;
 
 html {
-  @apply font-body;
+  @apply font-body text-gray-800;
 }
 
 h1 {
   @apply font-display text-2xl tracking-wide uppercase leading-relaxed;
+}
+h2 {
+  @apply font-display text-xl tracking-wide uppercase leading-relaxed;
+}
+
+ul {
+  @apply list-none;
 }
 
 @tailwind components;

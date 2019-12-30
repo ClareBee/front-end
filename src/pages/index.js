@@ -10,22 +10,26 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <ul>
     {data.allStrapiPost.edges.map(post => (
-      <li key={post.node.id}>
+      <li className="shadow-md p-4 m-2 rounded" key={post.node.id}>
         <Link to={`/${post.node.id}`}>
-          <h3>{post.node.title}</h3>
+          <h1>{post.node.title}</h1>
         </Link>
-        <Img fixed={post.node.banner.childImageSharp.fixed} />
+        <div className="sm:flex items-start py-3 border-b-2 border-t-2 border-gray-400">
+          <Img fixed={post.node.banner.childImageSharp.fixed} className="flex-none rounded m-2"/>
 
-        <ReactMarkdown
-          source={post.node.content.substring(0,500).concat("...")}
-          transformImageURI={uri => uri.startsWith('http') ? uri :
-          `${process.env.IMAGE_BASE_URL}${uri}`}
-          escapeHtml={false} />
-        <Link to={`/${post.node.id}`}>Read more</Link>
+          <ReactMarkdown
+            className="flex flex-col mx-2"
+            source={post.node.content.substring(0,350).concat("...")}
+            transformImageURI={uri => uri.startsWith('http') ? uri :
+            `${process.env.IMAGE_BASE_URL}${uri}`}
+            escapeHtml={false} />
+        </div>
+        <div className="flex justify-end pt-3">
+          <Link to={`/${post.node.id}`} className="text-gray-500">Read more</Link>
+        </div>
       </li>
     ))}
     </ul>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
@@ -41,7 +45,7 @@ export const pageQuery = graphql`
           content
           banner {
             childImageSharp {
-              fixed(width: 200, height: 200){
+              fixed(width: 150, height: 150){
                 ...GatsbyImageSharpFixed
               }
             }

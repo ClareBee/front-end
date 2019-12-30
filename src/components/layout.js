@@ -25,9 +25,9 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container flex-grow flex flex-col">
+      <div className="container flex-grow flex flex-col py-4">
         <main className="flex-grow">{children}</main>
-        <footer className="font-body">
+        <footer className="font-body w-100 mt-2 text-gray-500">
           © {new Date().getFullYear()} - Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>,

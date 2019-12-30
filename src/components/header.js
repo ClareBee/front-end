@@ -6,11 +6,10 @@ const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log(isOpen)
     setIsOpen(!isOpen)
   }
   return (
-    <header className="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <header className="bg-gray-500 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <div>
           <img src="" alt="" />
@@ -23,7 +22,7 @@ const Header = ({ siteTitle }) => {
           </h1>
         </div>
         <div className="sm:hidden">
-          <button onClick={toggleMenu} type="button" className="block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+          <button onClick={toggleMenu} type="button" className="block text-gray-300 hover:text-white focus:text-white focus:outline-none">
             <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
             {isOpen
               ?
@@ -36,9 +35,10 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
       <div className={`px-2 pt-2 pb-4 sm:flex ${isOpen ? "block" : "hidden"}`}>
-        <Link to="/about" className="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-800">About</Link>
-        <Link to="/contact" className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Contact</Link>
-        <Link to="/resources" className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-800 sm:mt-0 sm:ml-2">Resources</Link>
+        <Link to="/" className="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600">Home</Link>
+        <Link to="/about" className="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600">About</Link>
+        <Link to="/contact" className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-600 sm:mt-0 sm:ml-2">Contact</Link>
+        <Link to="/resources" className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-600 sm:mt-0 sm:ml-2">Resources</Link>
       </div>
     </header>
   )
