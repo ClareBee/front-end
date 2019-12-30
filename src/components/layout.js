@@ -23,17 +23,21 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="bg-gray-700">
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+      <div className="container flex-grow flex flex-col">
+        <main className="flex-grow">{children}</main>
+        <footer className="">
+          © {new Date().getFullYear()} - Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>,
+          {` `}
+          <a href="https://strapi.io/">Strapi</a>
+          {` `}&{` `}
+          <a href="https://tailwindcss.com/">Tailwind CSS</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
