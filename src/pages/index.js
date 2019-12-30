@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import '../styles/global.css'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -21,7 +20,6 @@ const IndexPage = ({ data }) => (
           source={post.node.content.substring(0,500).concat("...")}
           transformImageURI={uri => uri.startsWith('http') ? uri :
           `${process.env.IMAGE_BASE_URL}${uri}`}
-          className='indexArticle'
           escapeHtml={false} />
         <Link to={`/${post.node.id}`}>Read more</Link>
       </li>

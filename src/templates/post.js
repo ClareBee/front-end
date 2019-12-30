@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/layout'
-import "../styles/global.css"
 
 const PostTemplate = ({ data }) => (
   <Layout>
@@ -18,7 +17,6 @@ const PostTemplate = ({ data }) => (
       source={data.strapiPost.content}
       transformImageURI={uri => uri.startsWith('http') ? uri :
       `${process.env.IMAGE_BASE_URL}${uri}`}
-      className='articleContent'
       escapeHtml={false} />
   </Layout>
 )
