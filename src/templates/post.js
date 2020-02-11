@@ -12,7 +12,9 @@ const PostTemplate = ({ data }) => (
       {data.strapiPost.author.username}
       </Link>
     </p>
-    <Img fluid={data.strapiPost.banner.childImageSharp.fluid} />
+    <div className="sm:w-full md:w-1/2 sm:float-none md:float-right sm:m-1 md:m-6">
+      <Img fluid={data.strapiPost.banner.childImageSharp.fluid} className="rounded"/>
+    </div>
     <ReactMarkdown
       source={data.strapiPost.content}
       transformImageURI={uri => uri.startsWith('http') ? uri :
