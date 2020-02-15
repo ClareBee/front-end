@@ -21,12 +21,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-200">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container flex-grow flex flex-col py-4">
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow p-4 flex flex-col items-center">{children}</main>
         <footer className="font-body w-100 mt-2 text-gray-500">
           © {new Date().getFullYear()} - Built with
           {` `}
