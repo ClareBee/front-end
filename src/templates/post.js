@@ -5,8 +5,8 @@ import ReactMarkdown from "react-markdown"
 import Prism from "prismjs"
 import { DiscussionEmbed } from "disqus-react"
 
-import Layout from "../components/Layout"
-import SocialShare from "../components/SocialShare"
+import Layout from "../components/layout"
+import SocialShare from "../components/social-share"
 
 const PostTemplate = ({ data, location }) => {
   useEffect(() => {

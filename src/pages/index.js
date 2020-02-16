@@ -2,9 +2,10 @@ import React, { useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
-import Layout from "../components/Layout"
-import SEO from "../components/Seo"
 import Prism from "prismjs"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
   useEffect(() => {
