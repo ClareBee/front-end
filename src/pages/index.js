@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
             <div className="flex justify-end pt-3">
               <Link
                 to={`/${post.node.id}`}
-                className="text-gray-500 hover:text-purple-700"
+                className="transition-text duration-300 ease-in text-gray-500 hover:text-purple-700"
               >
                 Read more
               </Link>

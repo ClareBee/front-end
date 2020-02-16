@@ -23,7 +23,7 @@ const About = () => (
       </p>
       <hr className="my-4 border-t-4 border-gray-300" />
       <ul>
-        <li className="flex  my-2">
+        <li className="flex my-2">
           <svg class="h2 w-2 text-gray-500 mx-2" viewBox="0 0 8 8" fill="currentColor">
             <circle cx="4" cy="4" r="3" />
           </svg>Hosted on Netlify (Gatsby) and Heroku (Strapi)</li>
