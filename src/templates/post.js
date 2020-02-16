@@ -34,11 +34,11 @@ const PostTemplate = ({ data, location }) => {
         </p>
         <SocialShare data={data.strapiPost} shareUrl={shareUrl} />
         <div className="mt-2 flex flex-col">
-          <hr className="my-2 border-t-4 border-gray-300" />
+          <hr className="my-4 border-t-4 border-gray-300" />
           <div className="w-full md:w-3/4 lg:w-1/2my-4 mx-auto">
             <Img fluid={banner.childImageSharp.fluid} className="rounded" />
           </div>
-          <hr className="my-2 border-t-4 border-gray-300" />
+          <hr className="my-4 border-t-4 border-gray-300" />
           <ReactMarkdown
             className="text-lg text-justify"
             source={content}

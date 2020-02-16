@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => {
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <div>
           <img src="" alt="" />
-          <h1 className="text-white">
+          <h1 className="transition-text duration-300 ease-in text-white hover:text-purple-700">
             <Link to="/">{siteTitle}</Link>
           </h1>
         </div>
@@ -42,27 +42,21 @@ const Header = ({ siteTitle }) => {
       <div className={`px-2 pt-2 pb-4 sm:flex ${isOpen ? "block" : "hidden"}`}>
         <Link
           to="/"
-          className="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
+          className="transition-bg duration-300 ease-in block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
+          className="transition-bg duration-300 ease-in block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
         >
           About
         </Link>
         <Link
           to="/contact"
-          className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-600 sm:mt-0 sm:ml-2"
+          className="transition-bg duration-300 ease-in block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-600 sm:mt-0 sm:ml-2"
         >
           Contact
-        </Link>
-        <Link
-          to="/resources"
-          className="block mt-1 px-2 py-1 text-white font-semibold rounded hover:bg-gray-600 sm:mt-0 sm:ml-2"
-        >
-          Resources
         </Link>
       </div>
     </header>

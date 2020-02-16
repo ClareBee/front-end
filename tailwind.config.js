@@ -11,6 +11,8 @@ module.exports = {
       padding: "1rem",
     },
   },
-  variants: {},
+  variants: {
+    transitionProperty: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
