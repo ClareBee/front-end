@@ -2,10 +2,11 @@ import React, { useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
-import Layout from "../components/layout"
-import SocialShare from "../components/SocialShare"
 import Prism from "prismjs"
 import { DiscussionEmbed } from "disqus-react"
+
+import Layout from "../components/Layout"
+import SocialShare from "../components/SocialShare"
 
 const PostTemplate = ({ data, location }) => {
   useEffect(() => {

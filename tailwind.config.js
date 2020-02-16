@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   variants: {
-    transitionProperty: ['responsive', 'hover', 'focus'],
+    transitionProperty: ["responsive", "hover", "focus"],
   },
   plugins: [],
 }
