@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
     }
   `)
   return (
-    <div className="min-h-screen flex flex-col bg-gray-200">
+    <div className="min-h-screen flex flex-col bg-gray-200" location={location}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container flex-grow flex flex-col py-4">
         <main className="flex-grow p-4 flex flex-col items-center">{children}</main>
