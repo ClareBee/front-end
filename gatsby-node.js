@@ -32,8 +32,9 @@ exports.createPages = ({ actions, graphql }) => {
     }
     `
   ).then(result => {
+    const { edges } = result.data.allStrapiPost
     // Create pages for each article.
-    result.data.allStrapiPost.edges.forEach(({ node }) => {
+    edges.forEach(({ node }) => {
       createPage({
         path: `/${node.id}`,
         component: path.resolve(`src/templates/post.js`),
@@ -42,6 +43,22 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+    const postsPerPage = 2;
+    const numPages = Math.ceil(edges.length / postsPerPage);
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      console.log('num pages', numPages)
+      createPage({
+        path: i === 0 ? `/post-list/` : `/post-list/${i + 1}`,
+        component: path.resolve('src/templates/post-list.js'),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1
+        },
+      });
+    });
   })
 
   const getAuthors = makeRequest(
