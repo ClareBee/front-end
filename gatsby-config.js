@@ -8,13 +8,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-favicon`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.DEPLOY_URL
