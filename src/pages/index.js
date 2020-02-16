@@ -1,11 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Prism from 'prismjs'
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) => {
+
+  useEffect(() => {
+    Prism.highlightAll()
+  })
+  return(
   <Layout>
     <SEO title="Home" />
     <ul className="sm:w-full md:w-3/4">
@@ -30,7 +36,7 @@ const IndexPage = ({ data }) => (
     ))}
     </ul>
   </Layout>
-)
+)}
 
 export default IndexPage
 
