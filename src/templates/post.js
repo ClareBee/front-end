@@ -22,11 +22,11 @@ const PostTemplate = ({ data, location }) => {
     <Layout>
       <div className="flex flex-col lg:w-1/2 md:w-full bg-white p-6">
         <h1>{title}</h1>
-        <p className="font-body">
+        <p className="font-body mb-2">
           by{" "}
           <Link
             to={`/authors/User_${author.id}`}
-            className="text-gray-500 hover:text-purple-700"
+            className="transition-text duration-300 ease-in text-gray-500 hover:text-purple-700"
           >
             {author.username}
           </Link>

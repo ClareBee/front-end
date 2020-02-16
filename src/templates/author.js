@@ -22,7 +22,9 @@ const UserTemplate = ({ data: { strapiUser} }) => (
               <Link to={`/Post_${post.id}`}>{post.title}</Link>
             </h2>
           </div>
-            <Link to={`/Post_${post.id}`}>Read more</Link>
+            <Link
+              className="transition-text duration-300 ease-in text-gray-500 hover:text-purple-700" 
+              to={`/Post_${post.id}`}>Read more</Link>
         </li>
       ))}
     </ul>
