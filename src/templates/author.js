@@ -1,29 +1,33 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import ReactMarkdown from 'react-markdown'
-import Layout from '../components/layout'
+import React from "react"
+import { Link, graphql } from "gatsby"
+import ReactMarkdown from "react-markdown"
+import Layout from "../components/layout"
 
 const UserTemplate = ({ data }) => (
-    <Layout>
-      <h1>{data.strapiUser.username}</h1>
-      <ul>
-        {data.strapiUser.posts.map(post => (
-          <li key={post.id}>
-            <h2>
-              <Link to={`/Post_${post.id}`}>{post.title}</Link>
-            </h2>
-            <ReactMarkdown
-              source={post.content.substring(0,500).concat('...')}
-              transformImageURI={uri => uri.startsWith('http') ? uri :
-              `${process.env.IMAGE_BASE_URL}${uri}`}
-              className='indexArticle'
-              escapeHtml={false} />
-            <Link to={`/Post_${post.id}`}>Read more</Link>
-          </li>
-        ))}
-      </ul>
-    </Layout>
-  )
+  <Layout>
+    <h1>{data.strapiUser.username}</h1>
+    <ul>
+      {data.strapiUser.posts.map(post => (
+        <li key={post.id}>
+          <h2>
+            <Link to={`/Post_${post.id}`}>{post.title}</Link>
+          </h2>
+          <ReactMarkdown
+            source={post.content.substring(0, 500).concat("...")}
+            transformImageURI={uri =>
+              uri.startsWith("http")
+                ? uri
+                : `${process.env.IMAGE_BASE_URL}${uri}`
+            }
+            className="indexArticle"
+            escapeHtml={false}
+          />
+          <Link to={`/Post_${post.id}`}>Read more</Link>
+        </li>
+      ))}
+    </ul>
+  </Layout>
+)
 
 export default UserTemplate
 

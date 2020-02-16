@@ -25,12 +25,13 @@ const Layout = ({ children, location }) => {
     <div className="min-h-screen flex flex-col bg-gray-200" location={location}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container flex-grow flex flex-col py-4">
-        <main className="flex-grow p-4 flex flex-col items-center">{children}</main>
+        <main className="flex-grow p-4 flex flex-col items-center">
+          {children}
+        </main>
         <footer className="font-body w-100 mt-2 text-gray-500">
           © {new Date().getFullYear()} - Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>,
-          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>,{` `}
           <a href="https://strapi.io/">Strapi</a>
           {` `}&{` `}
           <a href="https://tailwindcss.com/">Tailwind CSS</a>

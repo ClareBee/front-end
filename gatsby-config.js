@@ -16,11 +16,10 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: process.env.DEPLOY_URL ? 'https://clarebee-strapi-cms.herokuapp.com' : 'http://localhost:1337',
-        contentTypes: [
-          'post',
-          'user'
-        ],
+        apiURL: process.env.DEPLOY_URL
+          ? "https://clarebee-strapi-cms.herokuapp.com"
+          : "http://localhost:1337",
+        contentTypes: ["post", "user"],
         queryLimit: 1000,
       },
     },
@@ -30,12 +29,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Montserrat`,
-          `Oswald`
-        ],
-        display: 'swap'
-      }
+        fonts: [`Montserrat`, `Oswald`],
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
