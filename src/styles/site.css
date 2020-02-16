@@ -22,3 +22,8 @@ ul {
 .btn {
   @apply py-2 px-4 rounded;
 }
+
+code {
+  width: 100%;
+  display: block;
+}

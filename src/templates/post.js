@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
 import Layout from '../components/layout'
+import Prism from 'prismjs'
 
 const PostTemplate = ({ data }) => {
   console.log('data', data)
+  useEffect(() => {
+    Prism.highlightAll()
+  })
   return (
   <Layout>
     <div className="flex flex-col lg:w-1/2 md:w-full bg-white p-6">
@@ -16,8 +20,8 @@ const PostTemplate = ({ data }) => {
         </Link>
         <span>{' '}- {new Date(data.strapiPost.created_at).toLocaleString()}</span>
       </p>
-      <div className="mt-2">
-        <div className="lg:w-1/2 md:w-full mb-2 ml-2 float-right">
+      <div className="mt-2 flex flex-col">
+        <div className="lg:w-1/2 md:w-3/4 my-4 mx-auto">
           <Img fluid={data.strapiPost.banner.childImageSharp.fluid} className="rounded"/>
         </div>
         <ReactMarkdown
