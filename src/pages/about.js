@@ -20,7 +20,8 @@ const About = () => (
           {" "}
           Gatsby
         </a>
-        and{" "}
+        and
+        {" "}
         <a
           href="https://strapi.io/"
           target="_blank"
@@ -29,7 +30,9 @@ const About = () => (
         >
           Strapi CMS
         </a>
-        inspired by the{" "}
+        {" "}
+        inspired by the
+        {" "}
         <a
           href="https://strapi.io/blog/building-a-static-website-using-gatsby-and-strapi#10setupcloudinarynetlifypredeploy"
           target="_blank"
@@ -49,16 +52,19 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Hosted on{" "}
+          Hosted on
           <a
             target="_blank"
             rel="noopener noreferrer"
             className="text-purple-700 hover:text-gray-500"
             href="https://www.netlify.com/"
           >
-            Netlify
-          </a>{" "}
-          (Gatsby) and{" "}
+          {" "}
+           Netlify
+          </a>
+          {" "}
+          (Gatsby) and
+          {" "}
           <a
             href="https://www.heroku.com/"
             target="_blank"
@@ -66,7 +72,8 @@ const About = () => (
             className="text-purple-700 hover:text-gray-500"
           >
             Heroku
-          </a>{" "}
+          </a>
+          {" "}
           (Strapi)
         </li>
         <li className="flex my-2">
@@ -77,7 +84,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Images hosted on{" "}
+          Images hosted on
+          {" "}
           <a
             href="https://cloudinary.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -95,7 +103,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Code syntax highlighting by{" "}
+          Code syntax highlighting by
+          {" "}
           <a
             href="https://prismjs.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -113,7 +122,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Social share buttons via{" "}
+          Social share buttons via
+          {" "}
           <a
             href="https://github.com/nygardk/react-share"
             className="text-purple-700 hover:text-gray-500"
@@ -131,7 +141,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Comments by{" "}
+          Comments by
+          {" "}
           <a
             href="https://disqus.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -149,7 +160,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Styled with{" "}
+          Styled with
+          {" "}
           <a
             href="https://tailwindcss.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -167,7 +179,8 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Contact form by{" "}
+          Contact form by
+          {" "}
           <a
             href="https://getform.io/"
             className="text-purple-700 hover:text-gray-500"
