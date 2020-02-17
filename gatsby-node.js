@@ -43,22 +43,21 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
-    const postsPerPage = 2;
-    const numPages = Math.ceil(edges.length / postsPerPage);
+    const postsPerPage = 2
+    const numPages = Math.ceil(edges.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {
-      console.log('num pages', numPages)
       createPage({
-        path: i === 0 ? `/post-list/` : `/post-list/${i + 1}`,
-        component: path.resolve('src/templates/post-list.js'),
+        path: i === 0 ? `/posts/` : `/posts/${i + 1}`,
+        component: path.resolve("src/templates/posts.js"),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
           numPages,
-          currentPage: i + 1
+          currentPage: i + 1,
         },
-      });
-    });
+      })
+    })
   })
 
   const getAuthors = makeRequest(
