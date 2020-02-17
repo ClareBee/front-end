@@ -17,11 +17,11 @@ const About = () => (
           rel="noopener noreferrer"
           className="text-purple-700 hover:text-gray-500"
         >
-          {" "}
+          &#32;
           Gatsby
         </a>
         and
-        {" "}
+        &#32;
         <a
           href="https://strapi.io/"
           target="_blank"
@@ -30,9 +30,9 @@ const About = () => (
         >
           Strapi CMS
         </a>
-        {" "}
+        &#32;
         inspired by the
-        {" "}
+        &#32;
         <a
           href="https://strapi.io/blog/building-a-static-website-using-gatsby-and-strapi#10setupcloudinarynetlifypredeploy"
           target="_blank"
@@ -59,12 +59,12 @@ const About = () => (
             className="text-purple-700 hover:text-gray-500"
             href="https://www.netlify.com/"
           >
-          {" "}
+          &#32;
            Netlify
           </a>
-          {" "}
+          &#32;
           (Gatsby) and
-          {" "}
+          &#32;
           <a
             href="https://www.heroku.com/"
             target="_blank"
@@ -73,7 +73,7 @@ const About = () => (
           >
             Heroku
           </a>
-          {" "}
+          &#32;
           (Strapi)
         </li>
         <li className="flex my-2">
@@ -85,7 +85,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Images hosted on
-          {" "}
+          &#32;
           <a
             href="https://cloudinary.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -104,7 +104,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Code syntax highlighting by
-          {" "}
+          &#32;
           <a
             href="https://prismjs.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -123,7 +123,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Social share buttons via
-          {" "}
+          &#32;
           <a
             href="https://github.com/nygardk/react-share"
             className="text-purple-700 hover:text-gray-500"
@@ -142,7 +142,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Comments by
-          {" "}
+          &#32;
           <a
             href="https://disqus.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -161,7 +161,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Styled with
-          {" "}
+          &#32;
           <a
             href="https://tailwindcss.com/"
             className="text-purple-700 hover:text-gray-500"
@@ -180,7 +180,7 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           Contact form by
-          {" "}
+          &#32;
           <a
             href="https://getform.io/"
             className="text-purple-700 hover:text-gray-500"
