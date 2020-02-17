@@ -15,7 +15,7 @@ const About = () => (
           href="https://www.gatsbyjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-purple-700 hover:text-gray-500 mx-2"
+          className="text-purple-700 hover:text-gray-500 mx-1"
         >
           Gatsby
         </a>
@@ -24,7 +24,7 @@ const About = () => (
           href="https://strapi.io/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-purple-700 hover:text-gray-500 mx-2"
+          className="text-purple-700 hover:text-gray-500 mx-1"
         >
           Strapi CMS
         </a>
@@ -33,7 +33,7 @@ const About = () => (
           href="https://strapi.io/blog/building-a-static-website-using-gatsby-and-strapi#10setupcloudinarynetlifypredeploy"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-purple-700 hover:text-gray-500 mx-2"
+          className="text-purple-700 hover:text-gray-500 mx-1"
         >
           Strapi Docs
         </a>
@@ -53,7 +53,7 @@ const About = () => (
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               href="https://www.netlify.com/"
             >
               Netlify
@@ -63,7 +63,7 @@ const About = () => (
               href="https://www.heroku.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
             >
               Heroku
             </a>
@@ -79,10 +79,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Images hosted on{" "}
+            Images hosted on:
             <a
               href="https://cloudinary.com/"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -99,10 +99,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Code syntax highlighting by{" "}
+            Code syntax highlighting by:
             <a
               href="https://prismjs.com/"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -119,10 +119,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Social share buttons via{" "}
+            Social share buttons via:
             <a
               href="https://github.com/nygardk/react-share"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -139,10 +139,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Comments by{" "}
+            Comments by:
             <a
               href="https://disqus.com/"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -159,10 +159,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Styled with{" "}
+            Styled with:
             <a
               href="https://tailwindcss.com/"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -179,10 +179,10 @@ const About = () => (
             <circle cx="4" cy="4" r="3" />
           </svg>
           <span>
-            Contact form by{" "}
+            Contact form by:
             <a
               href="https://getform.io/"
-              className="text-purple-700 hover:text-gray-500 mx-2"
+              className="text-purple-700 hover:text-gray-500 mx-1"
               target="_blank"
               rel="noopener noreferrer"
             >
