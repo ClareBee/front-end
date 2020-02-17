@@ -36,7 +36,7 @@ module.exports = {
       options: {
         name: `clare-bee-tech-blog`,
         short_name: `tech-blog`,
-        start_url: `/`,
+        start_url: `/posts`,
         background_color: `#cdcdcd`,
         theme_color: `#cdcdcd`,
         display: `minimal-ui`,

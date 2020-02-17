@@ -12,9 +12,8 @@ const Header = ({ siteTitle }) => {
     <header className="bg-gray-500 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <div>
-          <img src="" alt="" />
           <h1 className="transition-text duration-300 ease-in text-white hover:text-purple-700">
-            <Link to="/">{siteTitle}</Link>
+            <Link to="/posts">{siteTitle}</Link>
           </h1>
         </div>
         <div className="sm:hidden">
@@ -41,7 +40,7 @@ const Header = ({ siteTitle }) => {
       </div>
       <div className={`px-2 pt-2 pb-4 sm:flex ${isOpen ? "block" : "hidden"}`}>
         <Link
-          to="/"
+          to="/posts"
           className="transition-bg duration-300 ease-in block px-2 py-1 text-white font-semibold rounded hover:bg-gray-600"
         >
           Home

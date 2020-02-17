@@ -32,13 +32,29 @@ exports.createPages = ({ actions, graphql }) => {
     }
     `
   ).then(result => {
+    const { edges } = result.data.allStrapiPost
     // Create pages for each article.
-    result.data.allStrapiPost.edges.forEach(({ node }) => {
+    edges.forEach(({ node }) => {
       createPage({
         path: `/${node.id}`,
         component: path.resolve(`src/templates/post.js`),
         context: {
           id: node.id,
+        },
+      })
+    })
+    const postsPerPage = 2
+    const numPages = Math.ceil(edges.length / postsPerPage)
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/posts/` : `/posts/${i + 1}`,
+        component: path.resolve("src/templates/posts.js"),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
         },
       })
     })
