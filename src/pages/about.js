@@ -10,7 +10,26 @@ const About = () => (
 
     <div className="bg-white p-6 my-4 rounded shadow-md">
       <p className="text-gray-700 text-base">
-        A small experiment integrating Gatsby and Strapi CMS inspired by the{" "}
+        A small experiment integrating
+        <a
+          href="https://www.gatsbyjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-700 hover:text-gray-500"
+        >
+          {" "}
+          Gatsby
+        </a>
+        and{" "}
+        <a
+          href="https://strapi.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-700 hover:text-gray-500"
+        >
+          Strapi CMS
+        </a>
+        inspired by the{" "}
         <a
           href="https://strapi.io/blog/building-a-static-website-using-gatsby-and-strapi#10setupcloudinarynetlifypredeploy"
           target="_blank"
@@ -30,7 +49,25 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Hosted on Netlify (Gatsby) and Heroku (Strapi)
+          Hosted on{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-700 hover:text-gray-500"
+            href="https://www.netlify.com/"
+          >
+            Netlify
+          </a>{" "}
+          (Gatsby) and{" "}
+          <a
+            href="https://www.heroku.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-700 hover:text-gray-500"
+          >
+            Heroku
+          </a>{" "}
+          (Strapi)
         </li>
         <li className="flex my-2">
           <svg
@@ -40,7 +77,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Images hosted on Cloudinary
+          Images hosted on{" "}
+          <a
+            href="https://cloudinary.com/"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cloudinary
+          </a>
         </li>
         <li className="flex my-2">
           <svg
@@ -50,7 +95,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Code syntax highlighting by Prism.js
+          Code syntax highlighting by{" "}
+          <a
+            href="https://prismjs.com/"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Prism.js
+          </a>
         </li>
         <li className="flex my-2">
           <svg
@@ -60,7 +113,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Social share buttons via react-share
+          Social share buttons via{" "}
+          <a
+            href="https://github.com/nygardk/react-share"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            react-share
+          </a>
         </li>
         <li className="flex my-2">
           <svg
@@ -70,7 +131,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Comments by Disqus
+          Comments by{" "}
+          <a
+            href="https://disqus.com/"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Disqus
+          </a>
         </li>
         <li className="flex my-2">
           <svg
@@ -80,7 +149,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Styled with TailwindCSS
+          Styled with{" "}
+          <a
+            href="https://tailwindcss.com/"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TailwindCSS
+          </a>
         </li>
         <li className="flex my-2">
           <svg
@@ -90,7 +167,15 @@ const About = () => (
           >
             <circle cx="4" cy="4" r="3" />
           </svg>
-          Contact form by GetForm
+          Contact form by{" "}
+          <a
+            href="https://getform.io/"
+            className="text-purple-700 hover:text-gray-500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GetForm
+          </a>
         </li>
       </ul>
     </div>
