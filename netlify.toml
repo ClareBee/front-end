@@ -6,11 +6,11 @@
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
-[[redirects]]
-  from = "https://clare-bee-blog.netlify.com/"
-  to = "https://clare-bee-blog.netlify.com/posts"
-  status = 200
-  force = true
+# [[redirects]]
+#   from = "https://clare-bee-blog.netlify.com/"
+#   to = "https://clare-bee-blog.netlify.com/posts"
+#   status = 200
+#   force = true
 
   ## (optional) Settings for Netlify Dev
   ## https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
