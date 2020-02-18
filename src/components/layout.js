@@ -23,7 +23,7 @@ const Layout = ({ children, location }) => {
     }
   `)
   return (
-    <div className="min-h-screen flex flex-col bg-gray-200" location={location}>
+    <div className="min-h-screen flex flex-col" location={location}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container flex-grow flex flex-col py-4">
         <main className="flex-grow p-4 flex flex-col items-center">
