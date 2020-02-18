@@ -42,7 +42,7 @@ const PostTemplate = ({ data, location }) => {
           </div>
           <hr className="my-4 border-t-4 border-gray-300" />
           <ReactMarkdown
-            className="text-lg text-justify"
+            className="sm:text-md md:text-lg text-justify"
             source={content}
             transformImageURI={uri =>
               uri.startsWith("http")
