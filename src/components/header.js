@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => {
     setIsOpen(!isOpen)
   }
   return (
-    <header className="bg-gray-500 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+    <header className="w-full fixed z-20 md:static bg-gray-500 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <div>
           <h1 className="transition-text duration-300 ease-in text-white hover:text-purple-700">
