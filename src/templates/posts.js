@@ -57,14 +57,14 @@ export const PageList = props => {
       </ul>
       <ul className="w-full flex justify-center items-center pl-0 rounded my-2">
         {!isFirst && (
-          <li className="p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 ml-0 rounded-l hover:bg-gray-200">
+          <li className="text-sm md:text-base p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 ml-0 rounded-l hover:bg-gray-200">
             <Link to={prevPage} rel="prev">
               ← Previous Page
             </Link>
           </li>
         )}
         {isFirst && (
-          <li className="p-2 leading-tight bg-white border border-gray-300 text-gray-300 border-r-0 ml-0 rounded-l">
+          <li className="text-sm md:text-base p-2 leading-tight bg-white border border-gray-300 text-gray-300 border-r-0 ml-0 rounded-l">
             ← Previous Page
           </li>
         )}
@@ -74,7 +74,7 @@ export const PageList = props => {
             style={{
               background: i + 1 === currentPage ? "darkgray" : "#fff",
             }}
-            className="p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 hover:bg-gray-200"
+            className="text-sm md:text-base p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 hover:bg-gray-200"
           >
             <Link
               to={`/posts/${i === 0 ? "" : i + 1}`}
@@ -88,14 +88,14 @@ export const PageList = props => {
           </li>
         ))}
         {!isLast && (
-          <li className="p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 ml-0 rounded-l hover:bg-gray-200">
+          <li className="text-sm md:text-base p-2 leading-tight bg-white border border-gray-300 text-gray-700 border-r-0 ml-0 rounded-l hover:bg-gray-200">
             <Link to={nextPage} rel="next">
               Next Page →
             </Link>
           </li>
         )}
         {isLast && (
-          <li className="p-2 leading-tight bg-white border border-gray-300 text-gray-300 border-r-0 ml-0 rounded-l">
+          <li className="text-sm md:text-base p-2 leading-tight bg-white border border-gray-300 text-gray-300 border-r-0 ml-0 rounded-l">
             Next Page →
           </li>
         )}
