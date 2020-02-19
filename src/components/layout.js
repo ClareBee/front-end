@@ -25,8 +25,8 @@ const Layout = ({ children, location }) => {
   return (
     <div className="min-h-screen flex flex-col" location={location}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container flex-grow flex flex-col sm:py-1 md:py-4">
-        <main className="flex-grow p-4 flex flex-col items-center mt-16 md:mt-auto">
+      <div className="container flex-grow flex flex-col sm:py-1 md:py-4 px-1">
+        <main className="flex-grow p-1 md:p-4 flex flex-col items-center mt-16 md:mt-auto">
           {children}
         </main>
         <footer className="font-body w-100 mt-2 text-gray-500 flex justify-between">

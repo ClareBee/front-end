@@ -22,7 +22,7 @@ const PostTemplate = ({ data, location }) => {
   const shareUrl = location.href
   return (
     <Layout>
-      <div className="flex flex-col lg:w-1/2 md:w-full bg-white p-6">
+      <div className="flex flex-col sm:w-full lg:w-1/2 bg-white p-4">
         <h1>{title}</h1>
         <p className="font-body mb-2">
           by{" "}
@@ -37,7 +37,7 @@ const PostTemplate = ({ data, location }) => {
         <SocialShare data={data.strapiPost} shareUrl={shareUrl} />
         <div className="mt-2 flex flex-col">
           <hr className="my-4 border-t-4 border-gray-300" />
-          <div className="w-full md:w-3/4 lg:w-1/2my-4 mx-auto">
+          <div className="w-full md:w-3/4 lg:w-1/2 my-4 mx-auto p-2">
             <Img fluid={banner.childImageSharp.fluid} className="rounded" />
           </div>
           <hr className="my-4 border-t-4 border-gray-300" />
