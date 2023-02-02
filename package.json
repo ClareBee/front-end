@@ -6,7 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "disqus-react": "^1.0.7",
-    "gatsby": "^2.18.17",
+    "gatsby": "^5.5.0",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -14,7 +14,7 @@
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sharp": "^2.2.31",
+    "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-source-strapi": "^0.0.10",
     "gatsby-transformer-sharp": "^2.2.23",
